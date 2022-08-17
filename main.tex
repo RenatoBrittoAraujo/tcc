@@ -45,12 +45,12 @@
 \clubpenalty=10000
 \widowpenalty=10000
 
-\input{fixos/comandos}
-\usepackage{fixos/customizacoes}
+\input{config/comandos}
+\usepackage{config/customizacoes}
 
-\input{editaveis/informacoes}
-\input{fixos/informacoes}
-\input{fixos/setup}
+\input{src/informacoes}
+\input{config/informacoes}
+\input{config/setup}
 
 \begin{document}
 
@@ -58,9 +58,9 @@
 \imprimircapa
 \imprimirfolhaderosto*
 
-\input{editaveis/abstract}
-\input{editaveis/abreviaturas}
-\input{fixos/indiceAutomatico}
+\input{src/abstract}
+\input{src/abreviaturas}
+\input{config/indiceAutomatico}
 
 \textual
 
@@ -71,7 +71,7 @@
 % 3. qual o problema que existe? (e vc prentende resolver parcial/totalmente)
 % 4. portanto, quais os objetivos dessa pesquisa
 % 5. como vc vai organizar estes pontos?
-\input{editaveis/introducao}
+\input{src/introducao}
 
 % PUXA DADOS DOS OUTROS
 % Aqui voce vai buscar coisas. Procure sistematicamente coisas que tratem do assunto
@@ -80,32 +80,32 @@
 % Lembre-se de informar tambem o processo que te levou a isso, tudo o que vc leu.
 % vc nao precisa falar sobre tudo que leu, e sim indicar as coisas relevantes que vc
 % encontrou no processo
-\input{editaveis/referencialteorico}
+\input{src/referencialteorico}
 
 % INDIQUE COMO VOCE VAI PUXAR SEUS PROPRIOS DADOS
 % ou seja, qual o processo do que vc vai fazer
 % quais sao as etapas e criterios desse processo
-\input{editaveis/Materiais-e-metodos}
+\input{src/Materiais-e-metodos}
 
 % TCC 1, foda-se
-\input{editaveis/proposta}
+\input{src/proposta}
 
 % O ATO DE PUXAR TEUS PROPRIOS DADOS
 % explica cada passo como tu ta fazendo
 % dados devem ser reproduziveis
-\input{editaveis/desenvolvimento}
+\input{src/desenvolvimento}
 
 % ANALISA TUDO QUE VC TEM ATE AGORA
 % chegou a hora de falar com propriedade
 % extraia informacoes a partir de tudo que vc fez e analise
 % o que voce extraiu. Desenhe o traco da sua nova descoberta
-\input{editaveis/analise}
+\input{src/analise}
 
 % CONCLUA
 % indique aqui notas finais sobre a busca realizada
 % trace um caminho para possiveis pesquisas no futuro que podem
 % usufruir do que vc fez aqui.
-\input{editaveis/conclusao}
+\input{src/conclusao}
 
 \bookmarksetup{startatroot} 
 

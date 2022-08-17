@@ -30,7 +30,7 @@ LC_NAME = pt_BR.UTF-8
 # environment
 LC_NUMERIC = pt_BR.UTF-8
 # makefile (from 'Makefile', line 14)
-FIXOS_FILES = $(addprefix $(FIXOS_DIR)/, $(FIXOS_SOURCES))
+CONFIG_FILES = $(addprefix $(CONFIG_DIR)/, $(CONFIG_SOURCES))
 # environment
 VSCODE_CWD = /home/renato/Desktop/eswex/latex
 # environment
@@ -42,7 +42,7 @@ MAKE_COMMAND := make
 # environment
 QT_ACCESSIBILITY = 1
 # makefile (from 'Makefile', line 16)
-EDITAVEIS_DIR = editaveis
+SRC_DIR = src
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -120,7 +120,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from 'Makefile', line 10)
-FIXOS_SOURCES = informacoes.tex fichaCatalografica.tex folhaDeAprovacao.tex comandos.tex setup.tex listasAutomaticas.tex indiceAutomatico.tex
+CONFIG_SOURCES = informacoes.tex fichaCatalografica.tex folhaDeAprovacao.tex comandos.tex setup.tex listasAutomaticas.tex indiceAutomatico.tex
 # environment
 SESSION_MANAGER = local/renato:@/tmp/.ICE-unix/1334,unix/renato:/tmp/.ICE-unix/1334
 # automatic
@@ -152,7 +152,7 @@ MAKECMDGOALS := all
 # environment
 XMODIFIERS = @im=ibus
 # makefile (from 'Makefile', line 19)
-EDITAVEIS_FILES = $(addprefix $(EDITAVEIS_DIR)/, $(EDITAVEIS_SOURCES))
+SRC_FILES = $(addprefix $(SRC_DIR)/, $(SRC_SOURCES))
 # environment
 DENO_INSTALL = /home/renato/.deno
 # environment
@@ -170,7 +170,7 @@ PATH = /home/renato/.pyenv/shims:/home/renato/.pyenv/bin:/home/linuxbrew/.linuxb
 # default
 MAKEFILES := 
 # makefile (from 'Makefile', line 17)
-EDITAVEIS_SOURCES = .
+SRC_SOURCES = .
 # environment
 LC_MONETARY = pt_BR.UTF-8
 # automatic
@@ -178,7 +178,7 @@ LC_MONETARY = pt_BR.UTF-8
 # environment
 LC_TIME = pt_BR.UTF-8
 # makefile (from 'Makefile', line 9)
-FIXOS_DIR = fixos
+CONFIG_DIR = config
 # makefile (from 'Makefile', line 4)
 LATEX = pdflatex
 # environment
@@ -276,7 +276,7 @@ VTE_VERSION = 6800
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # makefile (from 'Makefile', line 27)
-SOURCES = $(FIXOS_FILES) $(EDITAVEIS_FILES)
+SOURCES = $(CONFIG_FILES) $(SRC_FILES)
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -317,7 +317,7 @@ bibliografia.bib:
 #  File has not been updated.
 
 # Not a target:
-editaveis/.:
+src/.:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -330,13 +330,13 @@ Makefile:
 #  Successfully updated.
 
 # Not a target:
-fixos/folhaDeAprovacao.tex:
+config/folhaDeAprovacao.tex:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-fixos/setup.tex:
+config/setup.tex:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -367,7 +367,7 @@ dist-clean: clean
 #  File has not been updated.
 
 # Not a target:
-fixos/informacoes.tex:
+config/informacoes.tex:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -402,18 +402,18 @@ all:
 	@make $(TARGET)
 
 # Not a target:
-fixos/listasAutomaticas.tex:
+config/listasAutomaticas.tex:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-fixos/comandos.tex:
+config/comandos.tex:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
-TCC_FGA.pdf: main.tex fixos/informacoes.tex fixos/fichaCatalografica.tex fixos/folhaDeAprovacao.tex fixos/comandos.tex fixos/setup.tex fixos/listasAutomaticas.tex fixos/indiceAutomatico.tex editaveis/. bibliografia.bib
+TCC_FGA.pdf: main.tex config/informacoes.tex config/fichaCatalografica.tex config/folhaDeAprovacao.tex config/comandos.tex config/setup.tex config/listasAutomaticas.tex config/indiceAutomatico.tex src/. bibliografia.bib
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -425,7 +425,7 @@ TCC_FGA.pdf: main.tex fixos/informacoes.tex fixos/fichaCatalografica.tex fixos/f
 	@cp $(PDF_FILE) $(TARGET)
 
 # Not a target:
-fixos/fichaCatalografica.tex:
+config/fichaCatalografica.tex:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -448,7 +448,7 @@ main.tex:
 #  File has not been updated.
 
 # Not a target:
-fixos/indiceAutomatico.tex:
+config/indiceAutomatico.tex:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
