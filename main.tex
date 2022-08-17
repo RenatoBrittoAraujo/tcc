@@ -1,0 +1,118 @@
+\documentclass[12pt,openright,oneside,a4paper,english,french,spanish]{abntex2}
+
+\usepackage{cmap}	
+\usepackage{lmodern}	
+\usepackage[T1]{fontenc}	
+\usepackage[utf8]{inputenc}		
+\usepackage{lastpage}		
+\usepackage{indentfirst}
+\usepackage{color}	
+\usepackage{graphicx}	
+\usepackage{units}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite}
+\usepackage{bold-extra}
+\usepackage{eso-pic}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{xspace}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{graphicx}
+% \usepackage{tabularx}
+% \usepackage{booktabs}
+
+\usepackage{booktabs,makecell,tabularx}
+\usepackage{siunitx}
+\usepackage{adjustbox}
+\usepackage{array,booktabs}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand\theadfont{\small}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+\newcommand{\itractool}{DTEST\xspace}
+
+%Comandos para revisão
+\newcommand{\rev}[1]{{\color{green}#1}\xspace}
+\newcommand{\del}[1]{{\color{red}#1}\xspace}
+
+%Comandos para impedir linhas órfãs e viúvas
+\clubpenalty=10000
+\widowpenalty=10000
+
+\input{fixos/comandos}
+\usepackage{fixos/customizacoes}
+
+\input{editaveis/informacoes}
+\input{fixos/informacoes}
+\input{fixos/setup}
+
+\begin{document}
+
+\frenchspacing 
+\imprimircapa
+\imprimirfolhaderosto*
+
+\input{editaveis/abstract}
+\input{editaveis/abreviaturas}
+\input{fixos/indiceAutomatico}
+
+\textual
+
+
+% 
+% 1. contextualiza o seu leitor publico alvo
+% 2. mostra um overview da literatura relacionada ao negocio
+% 3. qual o problema que existe? (e vc prentende resolver parcial/totalmente)
+% 4. portanto, quais os objetivos dessa pesquisa
+% 5. como vc vai organizar estes pontos?
+\input{editaveis/introducao}
+
+% PUXA DADOS DOS OUTROS
+% Aqui voce vai buscar coisas. Procure sistematicamente coisas que tratem do assunto
+% envolvendo o problema que vc quer resolver. Catalogue aqui tudo de relevante que vc
+% achou e explique sua relevancia
+% Lembre-se de informar tambem o processo que te levou a isso, tudo o que vc leu.
+% vc nao precisa falar sobre tudo que leu, e sim indicar as coisas relevantes que vc
+% encontrou no processo
+\input{editaveis/referencialteorico}
+
+% INDIQUE COMO VOCE VAI PUXAR SEUS PROPRIOS DADOS
+% ou seja, qual o processo do que vc vai fazer
+% quais sao as etapas e criterios desse processo
+\input{editaveis/Materiais-e-metodos}
+
+% TCC 1, foda-se
+\input{editaveis/proposta}
+
+% O ATO DE PUXAR TEUS PROPRIOS DADOS
+% explica cada passo como tu ta fazendo
+% dados devem ser reproduziveis
+\input{editaveis/desenvolvimento}
+
+% ANALISA TUDO QUE VC TEM ATE AGORA
+% chegou a hora de falar com propriedade
+% extraia informacoes a partir de tudo que vc fez e analise
+% o que voce extraiu. Desenhe o traco da sua nova descoberta
+\input{editaveis/analise}
+
+% CONCLUA
+% indique aqui notas finais sobre a busca realizada
+% trace um caminho para possiveis pesquisas no futuro que podem
+% usufruir do que vc fez aqui.
+\input{editaveis/conclusao}
+
+\bookmarksetup{startatroot} 
+
+\postextual
+
+\bibliography{bibliografia} 
+
+\printindex
+\end{document}
+
