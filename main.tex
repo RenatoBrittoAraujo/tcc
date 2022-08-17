@@ -48,19 +48,19 @@
 \input{config/comandos}
 \usepackage{config/customizacoes}
 
-\input{src/informacoes}
-\input{config/informacoes}
+\input{src/constants}
 \input{config/setup}
 
 \begin{document}
 \renewcommand{\bibname}{References}
+% \renewcommand{\s}{References}
 
 \frenchspacing 
 \imprimircapa
 \imprimirfolhaderosto*
 
 \input{src/abstract}
-\input{src/abreviaturas}
+\input{src/acronyms}
 \input{config/indiceAutomatico}
 
 \textual
@@ -72,7 +72,7 @@
 % 3. qual o problema que existe? (e vc prentende resolver parcial/totalmente)
 % 4. portanto, quais os objetivos dessa pesquisa
 % 5. como vc vai organizar estes pontos?
-\input{src/introducao}
+\input{src/introduction}
 
 % PUXA DADOS DOS OUTROS
 % Aqui voce vai buscar coisas. Procure sistematicamente coisas que tratem do assunto
@@ -81,32 +81,34 @@
 % Lembre-se de informar tambem o processo que te levou a isso, tudo o que vc leu.
 % vc nao precisa falar sobre tudo que leu, e sim indicar as coisas relevantes que vc
 % encontrou no processo
-\input{src/referencialteorico}
+\input{src/related_work}
 
 % INDIQUE COMO VOCE VAI PUXAR SEUS PROPRIOS DADOS
 % ou seja, qual o processo do que vc vai fazer
 % quais sao as etapas e criterios desse processo
-\input{src/Materiais-e-metodos}
+\input{src/research_structure}
 
-% TCC 1, foda-se
-\input{src/proposta}
+% APENAS PARA TCC 1
+% basicamente descreve o que vc vai fazer no tcc2
+% --> opicional dependendo do seu caso
+\input{src/research_proposal_tcc1.tex}
 
 % O ATO DE PUXAR TEUS PROPRIOS DADOS
 % explica cada passo como tu ta fazendo
 % dados devem ser reproduziveis
-\input{src/desenvolvimento}
+\input{src/results}
 
 % ANALISA TUDO QUE VC TEM ATE AGORA
 % chegou a hora de falar com propriedade
-% extraia informacoes a partir de tudo que vc fez e analise
+% extraia constants a partir de tudo que vc fez e analise
 % o que voce extraiu. Desenhe o traco da sua nova descoberta
-\input{src/analise}
+\input{src/analysis}
 
 % CONCLUA
 % indique aqui notas finais sobre a busca realizada
 % trace um caminho para possiveis pesquisas no futuro que podem
 % usufruir do que vc fez aqui.
-\input{src/conclusao}
+\input{src/conclusion}
 
 \bookmarksetup{startatroot} 
 
