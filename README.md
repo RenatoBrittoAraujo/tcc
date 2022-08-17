@@ -4,6 +4,8 @@ Template criado para simplificar a sua vida na hora de fazer TCC com LaTeX tudo 
 
 ### Notas sobre o uso deste template
 
+Verifique o arquivo `TEMPLATE_GERADO.pdf` para decidir se quer usar este template ou nao.
+
 Este template esta em ingles. Para alterar, voce tera que fazer manualmente.
 
 Sobre as normas de ABNT: Nao conheco elas, ate onde eu sei esse template nao segue nenhuma norma. Tera que fazer isso por conta propria.
