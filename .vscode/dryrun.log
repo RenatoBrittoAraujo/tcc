@@ -1,8 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/renato/Desktop/eswex/latex'
-make TCC_FGA.pdf
-make: Leaving directory '/home/renato/Desktop/eswex/latex'
- 
-make: Warning: File 'Makefile' has modification time 10762 s in the future
-make: warning:  Clock skew detected.  Your build may be incomplete.
-
